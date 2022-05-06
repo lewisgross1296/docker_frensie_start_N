@@ -27,16 +27,16 @@ RUN mkdir /home/simulator &&  \
     mkdir /home/simulator/dependencies &&  \
     mkdir /home/simulator/temp
 
-RUN mkdir /home/simulator/dependencies/cmake &&  \
-    cd /home/simulator/temp &&  \
-    wget https://cmake.org/files/v3.17/cmake-3.17.1.tar.gz &&  \
-    tar -xvf cmake-3.17.1.tar.gz &&  \
-    cd cmake-3.17.1 &&  \
-    mkdir build &&  \
-    cd build &&  \
-    ../configure --prefix="/home/simulator/dependencies/cmake" &&  \
-    make -j8 &&  \
-    make install &&  \
+RUN mkdir /home/simulator/dependencies/cmake; \
+    cd /home/simulator/temp; \
+    wget https://cmake.org/files/v3.17/cmake-3.17.1.tar.gz; \
+    tar -xvf cmake-3.17.1.tar.gz; \
+    cd cmake-3.17.1; \
+    mkdir build; \
+    cd build; \
+    ../configure --prefix="/home/simulator/dependencies/cmake"; \
+    make -j8; \
+    make install; \
     rm -rf /home/simulator/temp/*
 
 ENV PATH /home/simulator/dependencies/cmake/bin:$PATH
@@ -139,7 +139,7 @@ COPY native /home/simulator/data/native
 
 RUN mkdir /home/simulator/FRENSIE &&  \
     cd /home/simulator/FRENSIE &&  \
-    git clone -b startN --single-branch https://github.com/lewisgross1296/FRENSIE.git &&  \
+    git clone -b start_at_N --single-branch https://github.com/lewisgross1296/FRENSIE.git &&  \
     ln -s FRENSIE src &&  \
     mkdir build &&  \
     cd build &&  \
@@ -171,13 +171,13 @@ RUN mkdir /home/simulator/FRENSIE &&  \
     rm -rf /home/simulator/FRENSIE/FRENSIE &&  \
     rm -rf /home/simulator/FRENSIE/src 
 
-ENV PATH /home/simulator/FRENSIE/bin:$PATH
+# ENV PATH /home/simulator/FRENSIE/bin:$PATH
 
-ENV PYTHONPATH /home/simulator/FRENSIE/bin:/home/simulator/FRENSIE/lib/python2.7/site-packages
+# ENV PYTHONPATH /home/simulator/FRENSIE/bin:/home/simulator/FRENSIE/lib/python2.7/site-packages
 
-ENV DATABASE_PATH /home/simulator/data/database.xml
+# ENV DATABASE_PATH /home/simulator/data/database.xml
 
-RUN rm -rf /home/simulator/temp
+# RUN rm -rf /home/simulator/temp
 
-RUN chown -R simulator /home/simulator
+# RUN chown -R simulator /home/simulator
 
