@@ -93,7 +93,7 @@ RUN mkdir /home/simulator/dependencies/boost &&  \
     tar -xvf boost_1_72_0.tar.gz &&  \
     cd boost_1_72_0 &&  \
     ./bootstrap.sh --prefix=/home/simulator/dependencies/boost &&  \
-    sed -i "$ a using mpi  && " project-config.jam &&  \
+    sed -i "$ a using mpi ;" project-config.jam &&  \
     ./b2 -j8 --prefix=/home/simulator/dependencies/boost -s NO_BZIP2=1 link=shared runtime-link=shared install &&  \
     rm -rf /home/simulator/temp/*
 
@@ -171,13 +171,13 @@ RUN mkdir /home/simulator/FRENSIE &&  \
     rm -rf /home/simulator/FRENSIE/FRENSIE &&  \
     rm -rf /home/simulator/FRENSIE/src 
 
-# ENV PATH /home/simulator/FRENSIE/bin:$PATH
+ENV PATH /home/simulator/FRENSIE/bin:$PATH
 
-# ENV PYTHONPATH /home/simulator/FRENSIE/bin:/home/simulator/FRENSIE/lib/python2.7/site-packages
+ENV PYTHONPATH /home/simulator/FRENSIE/bin:/home/simulator/FRENSIE/lib/python2.7/site-packages
 
-# ENV DATABASE_PATH /home/simulator/data/database.xml
+ENV DATABASE_PATH /home/simulator/data/database.xml
 
-# RUN rm -rf /home/simulator/temp
+RUN rm -rf /home/simulator/temp
 
-# RUN chown -R simulator /home/simulator
+RUN chown -R simulator /home/simulator
 
