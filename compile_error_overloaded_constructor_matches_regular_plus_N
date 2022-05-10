@@ -1,0 +1,320 @@
+[ 87%] Building CXX object packages/monte_carlo/manager/test/CMakeFiles/tstParticleSimulationManager.dir/tstParticleSimulationManager.cpp.o
+cd /home/simulator/FRENSIE/build/packages/monte_carlo/manager/test && /home/simulator/dependencies/openmpi/bin/mpicxx   -I/home/simulator/dependencies/openmpi/include -I/home/simulator/dependencies/openmpi/lib -I/home/simulator/dependencies/boost/include -I/home/simulator/dependencies/moab/include -I/home/simulator/dependencies/hdf5/include -I/home/simulator/dependencies/hdf5 -I/usr/include/eigen3 -I/home/simulator/dependencies/dagmc/include -I/home/simulator/FRENSIE/build -I/home/simulator/FRENSIE/build/packages/utility/core/src -I/home/simulator/FRENSIE/src/packages/utility/core/src -I/home/simulator/FRENSIE/src/packages/utility/archive/src -I/home/simulator/FRENSIE/src/packages/utility/archive/test -I/home/simulator/FRENSIE/src/packages/utility/system/src -I/home/simulator/FRENSIE/src/packages/utility/mpi/src -I/home/simulator/FRENSIE/src/packages/utility/prng/src -I/home/simulator/FRENSIE/src/packages/utility/interpolation/src -I/home/simulator/FRENSIE/src/packages/utility/direction_discretization/src -I/home/simulator/FRENSIE/src/packages/utility/distribution/src -I/home/simulator/FRENSIE/src/packages/utility/stats/src -I/home/simulator/FRENSIE/src/packages/utility/integrator/src -I/home/simulator/FRENSIE/src/packages/utility/grid/src -I/home/simulator/FRENSIE/src/packages/utility/mesh/src -I/home/simulator/FRENSIE/build/packages/geometry -I/home/simulator/FRENSIE/src/packages/geometry/core/src -I/home/simulator/FRENSIE/src/packages/geometry/dagmc/src -I/home/simulator/FRENSIE/src/packages/data/core/src -I/home/simulator/FRENSIE/src/packages/data/ace/src -I/home/simulator/FRENSIE/src/packages/data/endf/src -I/home/simulator/FRENSIE/src/packages/data/endl/src -I/home/simulator/FRENSIE/src/packages/data/native/src -I/home/simulator/FRENSIE/src/packages/data/database/src -I/home/simulator/FRENSIE/src/packages/data/xsdir/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/core/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/collision/core/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/collision/photon/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/collision/electron/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/collision/neutron/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/collision/kernel/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/active_region/core/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/active_region/source/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/active_region/response/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/event/core/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/event/estimator/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/event/particle_tracker/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/event/population_control/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/event/weight_cutoff/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/event/forced_collisions/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/event/dispatcher/src -I/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src  -std=c++14 -fext-numeric-literals -fopenmp -Wno-deprecated-declarations -DBOOST_LOG_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -g   -o CMakeFiles/tstParticleSimulationManager.dir/tstParticleSimulationManager.cpp.o -c /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp
+In file included from /home/simulator/dependencies/boost/include/boost/mpi/allocator.hpp:15:0,
+                 from /home/simulator/dependencies/boost/include/boost/mpi.hpp:22,
+                 from /home/simulator/FRENSIE/build/FRENSIE_config.hpp:17,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_LoggingMacros.hpp:13,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ExceptionTestMacros.hpp:17,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_DesignByContract.hpp:22,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_QuantityTraitsDecl.hpp:17,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_QuantityTraits.hpp:25,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ComparisonPolicy.hpp:16,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ComparisonTraitsHelpers.hpp:16,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ComparisonTraitsDecl.hpp:20,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ComparisonTraits.hpp:25,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_View.hpp:20,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ArrayView.hpp:19,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_Vector.hpp:20,
+                 from /home/simulator/FRENSIE/src/packages/utility/mpi/src/Utility_MPICommunicator.hpp:14,
+                 from /home/simulator/FRENSIE/src/packages/utility/mpi/src/Utility_Communicator.hpp:15,
+                 from /home/simulator/FRENSIE/src/packages/monte_carlo/event/core/src/MonteCarlo_ParticleHistoryObserver.hpp:24,
+                 from /home/simulator/FRENSIE/src/packages/monte_carlo/event/dispatcher/src/MonteCarlo_EventHandler.hpp:17,
+                 from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManager.hpp:19,
+                 from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:16,
+                 from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:
+/home/simulator/dependencies/boost/include/boost/mpi/config.hpp:127:0: warning: "OMPI_BUILD_CXX_BINDINGS" redefined
+ #define OMPI_BUILD_CXX_BINDINGS 1
+ 
+In file included from /home/simulator/dependencies/boost/include/boost/mpi/config.hpp:20:0,
+                 from /home/simulator/dependencies/boost/include/boost/mpi/allocator.hpp:15,
+                 from /home/simulator/dependencies/boost/include/boost/mpi.hpp:22,
+                 from /home/simulator/FRENSIE/build/FRENSIE_config.hpp:17,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_LoggingMacros.hpp:13,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ExceptionTestMacros.hpp:17,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_DesignByContract.hpp:22,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_QuantityTraitsDecl.hpp:17,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_QuantityTraits.hpp:25,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ComparisonPolicy.hpp:16,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ComparisonTraitsHelpers.hpp:16,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ComparisonTraitsDecl.hpp:20,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ComparisonTraits.hpp:25,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_View.hpp:20,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_ArrayView.hpp:19,
+                 from /home/simulator/FRENSIE/src/packages/utility/core/src/Utility_Vector.hpp:20,
+                 from /home/simulator/FRENSIE/src/packages/utility/mpi/src/Utility_MPICommunicator.hpp:14,
+                 from /home/simulator/FRENSIE/src/packages/utility/mpi/src/Utility_Communicator.hpp:15,
+                 from /home/simulator/FRENSIE/src/packages/monte_carlo/event/core/src/MonteCarlo_ParticleHistoryObserver.hpp:24,
+                 from /home/simulator/FRENSIE/src/packages/monte_carlo/event/dispatcher/src/MonteCarlo_EventHandler.hpp:17,
+                 from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManager.hpp:19,
+                 from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:16,
+                 from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:
+/home/simulator/dependencies/openmpi/include/mpi.h:172:0: note: this is the location of the previous definition
+ #define OMPI_BUILD_CXX_BINDINGS 0
+ 
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_get_history_details_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:117:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:170:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:224:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:279:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:335:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:391:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_setSimulationName_default_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:450:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_setSimulationName_single_file_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:509:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_setSimulationName_multiple_files_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:569:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_setSimulationArchiveType_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:630:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_setSimulationNameAndArchiveType_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:690:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_getModel_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:753:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_getSource_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:807:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_getEventHandler_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:862:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_runSimulation_history_wall_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:916:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_runSimulation_wall_time_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:974:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_runInterruptibleSimulation_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:1033:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_printSimulationSummary_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:1111:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_logSimulationSummary_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:1167:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], const char [4], int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_restart_basic_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:1226:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], std::__cxx11::string&, int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_restart_add_histories_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:1316:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], std::__cxx11::string&, int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_restart_new_wall_time_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:1404:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], std::__cxx11::string&, int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_restart_add_histories_new_wall_time_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:1495:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], std::__cxx11::string&, int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp: In member function 'virtual void ParticleSimulationManager_restart_updated_props_UnitTest::runImpl(std::ostream&, bool&, size_t&, size_t&, size_t&) const':
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:1587:71: error: call of overloaded 'ParticleSimulationManagerFactory(std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, std::shared_ptr<MonteCarlo::ParticleSource>&, std::shared_ptr<MonteCarlo::EventHandler>&, std::shared_ptr<MonteCarlo::SimulationProperties>&, const char [9], std::__cxx11::string&, int&)' is ambiguous
+                                                               threads ) );
+                                                                       ^
+In file included from /home/simulator/FRENSIE/src/packages/monte_carlo/manager/test/tstParticleSimulationManager.cpp:19:0:
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:50:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, uint64_t, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/simulator/FRENSIE/src/packages/monte_carlo/manager/src/MonteCarlo_ParticleSimulationManagerFactory.hpp:40:3: note: candidate: MonteCarlo::ParticleSimulationManagerFactory::ParticleSimulationManagerFactory(const std::shared_ptr<const MonteCarlo::FilledGeometryModel>&, const std::shared_ptr<MonteCarlo::ParticleSource>&, const std::shared_ptr<MonteCarlo::EventHandler>&, const std::shared_ptr<const MonteCarlo::SimulationProperties>&, const string&, const string&, unsigned int)
+   ParticleSimulationManagerFactory(
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+packages/monte_carlo/manager/test/CMakeFiles/tstParticleSimulationManager.dir/build.make:85: recipe for target 'packages/monte_carlo/manager/test/CMakeFiles/tstParticleSimulationManager.dir/tstParticleSimulationManager.cpp.o' failed
+make[2]: Leaving directory '/home/simulator/FRENSIE/build'
+make[2]: *** [packages/monte_carlo/manager/test/CMakeFiles/tstParticleSimulationManager.dir/tstParticleSimulationManager.cpp.o] Error 1
+CMakeFiles/Makefile2:34100: recipe for target 'packages/monte_carlo/manager/test/CMakeFiles/tstParticleSimulationManager.dir/all' failed
+make[1]: *** [packages/monte_carlo/manager/test/CMakeFiles/tstParticleSimulationManager.dir/all] Error 2
+make[1]: Leaving directory '/home/simulator/FRENSIE/build'
+Makefile:163: recipe for target 'all' failed
+make: *** [all] Error 2
