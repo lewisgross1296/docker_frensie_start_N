@@ -172,10 +172,6 @@ ENV PYTHONPATH /home/simulator/FRENSIE/bin:/home/simulator/FRENSIE/lib/python2.7
 
 ENV DATABASE_PATH /home/simulator/data/database.xml
 
-WORKDIR /home/simulator
-
-RUN git clone https://github.com/lewisgross1296/frensie_restart_mwe.git
-
 RUN rm -rf /home/simulator/FRENSIE/build  && \
     rm -rf /home/simulator/FRENSIE/FRENSIE && \
     rm -rf /home/simulator/FRENSIE/src && \
