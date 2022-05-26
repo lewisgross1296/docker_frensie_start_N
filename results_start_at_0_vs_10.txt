@@ -1,0 +1,18 @@
+root@ad79ba5ced55:/home/simulator/frensie_restart_mwe/start_at_hist_N# cat sphere_results_1.csv 
+current results
+energy bin upper bound, current mean, current RE 
+0.5, 0.9, 0.11111111111111105
+1.0, 0.0, 0.0
+flux results
+energy bin upper bound, flux mean, flux RE 
+0.5, 0.0009852020671565437, 0.1623910155074259
+1.0, 0.0, 0.0
+root@ad79ba5ced55:/home/simulator/frensie_restart_mwe/start_at_hist_N# cat sphere_results_1_s\@10.csv 
+current results
+energy bin upper bound, current mean, current RE 
+0.5, 0.5, 0.33333333333333337
+1.0, 0.1, 1.0
+flux results
+energy bin upper bound, flux mean, flux RE 
+0.5, 0.000732447336478184, 0.3880761391130025
+1.0, 0.00010335411658218218, 1.0
